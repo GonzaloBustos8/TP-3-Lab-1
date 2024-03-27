@@ -142,9 +142,11 @@ public class TP3View extends javax.swing.JFrame {
         // TODO add your handling code here:
         String usuario = jtUsuario.getText();
         String contrasena = jtContrasena.getText();
-        if(usuario.equals("alumno@ulp.edu.ar")&& contrasena.equals("12345678")){
+        if (usuario.isEmpty() || contrasena.isEmpty()) {
+            JOptionPane.showMessageDialog(this, "Por favor, complete todos los campos");
+        }else if(usuario.equals("alumno@ulp.edu.ar")&& contrasena.equals("12345")){
             JOptionPane.showMessageDialog(this, "BIENVENIDO!");
-        } else{
+        }else{
             JOptionPane.showMessageDialog(this, "USUARIO Y/O CONTRASEÑA INCORRECTOS");
         }
     }//GEN-LAST:event_jbRegistrarActionPerformed

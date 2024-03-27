@@ -17,6 +17,8 @@ public class Mainclass {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        TP3View ventana = new TP3View();
+        ventana.setVisible(true);
     }
     
 }
