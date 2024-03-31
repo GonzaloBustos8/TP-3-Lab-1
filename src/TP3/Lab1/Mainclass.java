@@ -19,7 +19,7 @@ public class Mainclass {
         // TODO code application logic here
         TP3View ventana = new TP3View();
         ventana.setVisible(true);
-        System.out.println("holaaa probando jaja");
+        
     }
     
 }
