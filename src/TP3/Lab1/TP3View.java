@@ -51,6 +51,9 @@ public class TP3View extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Credenciales");
+        setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        setLocationByPlatform(true);
+        setResizable(false);
 
         Usuario.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
         Usuario.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -67,7 +70,7 @@ public class TP3View extends javax.swing.JFrame {
             }
         });
 
-        jtUsuario.setText("ejemplo@ulp.edu.ar");
+        jtUsuario.setText("alumno@ulp.edu.ar");
         jtUsuario.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jtUsuarioActionPerformed(evt);
@@ -149,7 +152,7 @@ public class TP3View extends javax.swing.JFrame {
         String contrasena = jtContrasena.getText();
         if (usuario.isEmpty() || contrasena.isEmpty()) {
             JOptionPane.showMessageDialog(this, "Por favor, complete todos los campos");
-        }else if(usuario.equals("alumno@ulp.edu.ar")&& contrasena.equals("12345")){
+        }else if(usuario.equals("alumno@ulp.edu.ar")&& contrasena.equals("12345678")){
             JOptionPane.showMessageDialog(this, "BIENVENIDO!");
         }else{
             JOptionPane.showMessageDialog(this, "USUARIO Y/O CONTRASEÑA INCORRECTOS");
